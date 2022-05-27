@@ -4,7 +4,6 @@ import IntroCard from '../components/introcard.js';
 import Title from '../components/title.js';
 import GlobalStyle from '../styles/globalStyle.js';
 
-
 const Home = () => {
 
     return (
