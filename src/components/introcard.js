@@ -30,7 +30,7 @@ const Card = styled.div`
         width: 100%;
     }
     
-    @media (max-width: 390px) {
+    @media (max-width: 410px) {
         height: 650px;
     }
 `;
@@ -59,7 +59,7 @@ const Avatar = styled.div`
     transition: 0.3s;
 
     &:hover {
-        transform: translateX(7px) translateY(7px)
+        transform: translateX(5px) translateY(5px)
     }
 `
 
