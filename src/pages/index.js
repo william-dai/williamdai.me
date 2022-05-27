@@ -5,6 +5,7 @@ import Title from '../components/title.js';
 import GlobalStyle from '../styles/globalStyle.js';
 
 const Home = () => {
+    document.body.style.display = 'none';
 
     return (
         <div>
