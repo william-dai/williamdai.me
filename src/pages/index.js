@@ -13,10 +13,10 @@ const Home = () => {
             <Navibar/>
             <Title/>
             <IntroCard/>
+            {/* <IntroCard/>
             <IntroCard/>
             <IntroCard/>
-            <IntroCard/>
-            <IntroCard/>
+            <IntroCard/> */}
         </div>
     )
 }
