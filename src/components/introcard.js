@@ -29,6 +29,10 @@ const Card = styled.div`
     @media (max-width: 600px) {
         width: 100%;
     }
+    
+    @media (max-width: 390px) {
+        height: 650px;
+    }
 `;
 
 const Description = styled.div`
@@ -84,11 +88,12 @@ const IntroCard = () => {
     const cardContainer = useRef(null);
     const avatarContainer = useRef(null);
     const textContainer = useRef(null);
+    console.log('test')
 
     useEffect(() => {
         ScrollReveal().reveal(cardContainer.current, {duration: 1500, distance: '50px'});
         ScrollReveal().reveal(textContainer.current, {delay: 1500, duration: 1000, distance: '10px'});
-        ScrollReveal().reveal(avatarContainer.current, {delay: 2000, duration: 1000});
+        ScrollReveal().reveal(avatarContainer.current, {delay: 100, duration: 1000});
     }, []);
 
     return (
