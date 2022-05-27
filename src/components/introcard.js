@@ -88,7 +88,6 @@ const IntroCard = () => {
     const cardContainer = useRef(null);
     const avatarContainer = useRef(null);
     const textContainer = useRef(null);
-    console.log('test 2')
 
     useEffect(() => {
         ScrollReveal().reveal(cardContainer.current, {duration: 1500, distance: '50px'});
