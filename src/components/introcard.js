@@ -30,7 +30,7 @@ const Card = styled.div`
         width: 100%;
     }
     
-    @media (max-width: 410px) {
+    @media (max-width: 480px) {
         height: 650px;
     }
 `;
@@ -88,7 +88,7 @@ const IntroCard = () => {
     const cardContainer = useRef(null);
     const avatarContainer = useRef(null);
     const textContainer = useRef(null);
-    console.log('test')
+    console.log('test 2')
 
     useEffect(() => {
         ScrollReveal().reveal(cardContainer.current, {duration: 1500, distance: '50px'});
