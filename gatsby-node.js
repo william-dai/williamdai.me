@@ -6,7 +6,10 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
             {
               test: /scrollreveal/,
               use: loaders.null(),
-            },
+            }, {
+              test: /gatsby-plugin-styled-components/,
+              use: loaders.null(),
+            }
           ],
         },
       })
