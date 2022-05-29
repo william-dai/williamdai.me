@@ -12,6 +12,7 @@ const Container = styled.div`
     right: 0;
     height: 100px;
     width: 171px;
+    visibility: hidden;
 `;
 
 const TopFont = styled.h3`

@@ -14,6 +14,7 @@ const Card = styled.div`
     border-radius: 16px;
     box-shadow: 0px 4px 51px 0px rgba(138, 89, 201, 0.18);
     width: 800px;
+    visibility: hidden;
 
     @media (max-width: 1080px) {
         height: 340px;
@@ -72,6 +73,7 @@ const AvatarBorder = styled.div`
     background-color: transparent;
     border: 1px solid rgba(17, 29, 58);
     border-radius: 7px;
+    visibility: hidden;
 
     @media (max-width: 1080px) {
         top: -35px;
