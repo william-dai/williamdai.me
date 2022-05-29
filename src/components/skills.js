@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import ScrollReveal from 'scrollreveal';
-import App from './menu.js';
+import HorizontalMenu from './menu.js';
 
 const Card = styled.div`
     position: relative;
@@ -10,7 +10,7 @@ const Card = styled.div`
     justify-content: flex-start;
     align-items: center;
     margin: auto;
-    height: 300px;
+    height: 460px;
     background-color: white;
     border-radius: 16px;
     box-shadow: 0px 4px 51px 0px rgba(138, 89, 201, 0.18);
@@ -52,35 +52,10 @@ const Description = styled.div`
     }
 `;
 
-// const Row = styled.div`
-//     width: 100%;
-//     position: relative;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-around;
-//     margin-top: 20px;
-// `
-
-// const Logo = styled.div`
-//     width: 90px;
-//     height: 90px;
-//     background-color: white;
-//     box-shadow: 0px 0px 10px 0px rgba(138, 89, 201, 0.18);
-//     border-radius: 7px;
-//     transition: 0.3s;
-//     margin: auto;
-//     text-align: center;
-//     vertical-align: middle;
-//     line-height: 90px;
-
-//     &:hover {
-//         transform: translateY(5px)
-//     }
-// `
-
-// const languages = ['C++', 'C', 'JavaScript', 'Python', 'SQL'];
-
 const Skills = () => {
+    const languages = ['C++', 'C', 'JavaScript', 'Python', 'SQL'];
+    const technologies = ['React.js', 'React Native', 'Node.js', 'Express.js', 'PostgreSQL', 'Google Firebase', 'Docker', 'Unix', 'Git']
+
     const cardContainer = useRef(null);
     const LogoContainer = useRef(null);
     const textContainer = useRef(null);
@@ -94,15 +69,25 @@ const Skills = () => {
     return (
         <Card ref={cardContainer}>
             <span style={{width: '100%'}} ref={textContainer}>
-                    <Description>
-                        I'd like to consider myself knowledged in the following:
-                    </Description>
-                    <Description>
-                        <b>Languages</b>
-                    </Description>
-                <div style={{margin: 'auto', width: '92%'}}>
-                    <App/>
+                <Description>
+                    I'd like to consider myself knowledged in the following:
+                </Description>
+                <Description>
+                    <b>Languages</b>
+                </Description>
+                
+                <div style={{marginLeft: '5px', marginTop: '5px', width: '96%'}}>
+                    {HorizontalMenu(languages)}
                 </div>
+                
+                <Description>
+                    <b>Technologies</b>
+                </Description>
+
+                <div style={{marginLeft: '5px',marginTop: '5px', width: '96%'}}>
+                    {HorizontalMenu(technologies)}
+                </div>
+
             </span>
         </Card>
     )
