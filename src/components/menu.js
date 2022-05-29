@@ -12,6 +12,7 @@ const NaviButton = styled.div`
     line-height: 20px;
     cursor: pointer;
     user-select: none;
+    z-index: 3;
     // background-color: red;
 `
 const LeftArrow = styled.div`
@@ -38,7 +39,6 @@ const LogoContainer = styled.div`
 `
 
 const Logo = styled.div`
-    margin-top: 10px;
     width: 90px;
     height: 90px;
     background-color: white;
@@ -55,10 +55,36 @@ const Logo = styled.div`
     }
 `
 
+const LogoInner = styled.div`
+    position: absolute;
+`
+
+const LogoImage = styled.img`
+    pointer-event: none;
+    position: absolute;
+    top: 9px;
+    left: 12px;
+    transition: 0.2s;
+    z-index: 1;
+    ${Logo}:hover & {
+        opacity: 0.075;
+    }
+`
+
+const Font = styled.div`
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    opacity: 0;
+    ${Logo}:hover & {
+        opacity: 1;
+    }
+`
+
 const getItems = (arr) => {
     let output = []
     for (let i = 0; i < arr.length; i++) {
-        output.push({ id: arr[i] });
+        output.push({ id: arr[i][0], img: arr[i][1] });
     }
     return output;
 }
@@ -85,33 +111,33 @@ const HorizontalMenu = (arr) => {
                 threshold: [0.01, 0.05, 0.5, 0.75, 0.95, 1]
             }}
         >
-        {items.map(({ id }) => (
+        {items.map(({ id, img, lang }) => (
             <Card
                 itemId={id} // NOTE: itemId is required for track items
                 title={id}
                 key={id}
                 onClick={handleClick(id)}
                 selected={isItemSelected(id)}
+                imgSrc={img}
             />
         ))}
         </ScrollMenu>
     );
 }
 
-function Card({ onClick, selected, title, itemId }) {
-    const visibility = React.useContext(VisibilityContext);
+function Card({ onClick, selected, title, itemId, imgSrc}) {
+    // const visibility = React.useContext(VisibilityContext);
 
     return (
-        <LogoContainer><Logo
-          onClick={() => onClick(visibility)}
-          tabIndex={0}
-        >
-            <div className="card">
-                <div>{title}</div>
-                {/* <div>visible: {JSON.stringify(!!visibility.isItemVisible(itemId))}</div> */}
-                {/* <div>selected: {JSON.stringify(!!selected)}</div> */}
-            </div>
-        </Logo></LogoContainer>
+        <LogoContainer>
+            <Logo>
+                <LogoInner>
+                    <LogoImage src={imgSrc} alt={title} width="64px"/>
+                </LogoInner>
+                <Font><b>{title}</b></Font>
+            </Logo>
+            
+        </LogoContainer>
     );
 }
 

@@ -18,7 +18,7 @@ const Divide = styled.div`
     }
 
     @media (max-width: 600px) {
-        width: 95%;
+        width: 92%;
     }
 `;
 
@@ -39,7 +39,7 @@ const Divider = (title) => {
     const fontContainer = useRef(null);
 
     useEffect(() => {
-        ScrollReveal().reveal(fontContainer.current, {delay: 1500, duration: 1000, origin: 'left', distance: '10px'});
+        ScrollReveal().reveal(fontContainer.current, {delay: 1500, duration: 1000, origin: 'top', distance: '10px'});
         ScrollReveal().reveal(divideContainer.current, {delay: 0, duration: 2000, distance: '50px'});
     }, []);
 

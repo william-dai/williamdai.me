@@ -3,6 +3,17 @@ import styled from 'styled-components';
 import ScrollReveal from 'scrollreveal';
 import HorizontalMenu from './menu.js';
 
+import CPlusLogo from "../images/C++.png";
+import CLangLogo from "../images/C.png";
+import JavaScriptLogo from '../images/JavaScript.png';
+import PythonLogo from '../images/Python.png';
+import SQLLogo from '../images/SQL.png';
+import HTML5Logo from '../images/HTML5.png';
+import CSS3Logo from '../images/CSS3.png';
+import ReactLogo from '../images/React.png';
+import ReactNativeLogo from '../images/ReactNative.png';
+import NodeLogo from '../images/Node.png';
+
 const Card = styled.div`
     position: relative;
     display: flex;
@@ -10,7 +21,7 @@ const Card = styled.div`
     justify-content: flex-start;
     align-items: center;
     margin: auto;
-    height: 460px;
+    height: 455px;
     background-color: white;
     border-radius: 16px;
     box-shadow: 0px 4px 51px 0px rgba(138, 89, 201, 0.18);
@@ -18,25 +29,18 @@ const Card = styled.div`
     visibility: hidden;
 
     @media (max-width: 1080px) {
-        height: 340px;
+        height: 425px;
         width: 70%
-    }
-
-    @media (max-width: 968px) {
-        height: 550px;
-    }
-
-    @media (max-width: 720px) {
-        height: 600px;
     }
 
     @media (max-width: 600px) {
         width: 100%;
     }
-    
-    @media (max-width: 480px) {
-        height: 650px;
+
+    @media (max-width: 400px) {
+        height: 445px;
     }
+    
 `;
 
 const Description = styled.div`
@@ -53,8 +57,26 @@ const Description = styled.div`
 `;
 
 const Skills = () => {
-    const languages = ['C++', 'C', 'JavaScript', 'Python', 'SQL'];
-    const technologies = ['React.js', 'React Native', 'Node.js', 'Express.js', 'PostgreSQL', 'Google Firebase', 'Docker', 'Unix', 'Git']
+    const languages = [
+        ['C++', CPlusLogo],
+        ['C', CLangLogo],
+        ['JavaScript', JavaScriptLogo],
+        ['Python', PythonLogo],
+        ['SQL', SQLLogo],
+        ['HTML5', HTML5Logo],
+        ['CSS3', CSS3Logo]
+    ];
+    const technologies = [
+        ['React.js', ReactLogo],
+        ['React Native', ReactNativeLogo],
+        ['Node.js', NodeLogo],
+        ['Express.js', null],
+        ['PostgreSQL', null],
+        ['Firebase', null],
+        ['Docker', null],
+        ['Unix', null],
+        ['Git', null]
+    ]
 
     const cardContainer = useRef(null);
     const LogoContainer = useRef(null);
@@ -72,11 +94,12 @@ const Skills = () => {
                 <Description>
                     I'd like to consider myself knowledged in the following:
                 </Description>
+
                 <Description>
                     <b>Languages</b>
                 </Description>
                 
-                <div style={{marginLeft: '5px', marginTop: '5px', width: '96%'}}>
+                <div style={{marginLeft: '1.3%', marginTop: '5px', width: '96%'}}>
                     {HorizontalMenu(languages)}
                 </div>
                 
@@ -84,7 +107,7 @@ const Skills = () => {
                     <b>Technologies</b>
                 </Description>
 
-                <div style={{marginLeft: '5px',marginTop: '5px', width: '96%'}}>
+                <div style={{marginLeft: '1.3%',marginTop: '5px', width: '96%'}}>
                     {HorizontalMenu(technologies)}
                 </div>
 
