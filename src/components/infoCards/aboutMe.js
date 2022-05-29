@@ -97,8 +97,8 @@ const AboutMe = () => {
 
     useEffect(() => {
         ScrollReveal().reveal(cardContainer.current, {delay: 0, duration: 2000, distance: '50px'});
-        ScrollReveal().reveal(textContainer.current, {delay: 1500, duration: 1000, distance: '10px'});
-        ScrollReveal().reveal(avatarContainer.current, {delay: 2000, duration: 1000, distance: '10px'});
+        ScrollReveal().reveal(textContainer.current, {delay: 250, duration: 1000, distance: '10px'});
+        ScrollReveal().reveal(avatarContainer.current, {delay: 500, duration: 1000, distance: '10px'});
     }, []);
 
     return (

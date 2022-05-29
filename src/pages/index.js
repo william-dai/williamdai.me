@@ -6,7 +6,6 @@ import Title from '../components/infoCards/title.js';
 import AboutMe from '../components/infoCards/aboutMe.js';
 import Skills from '../components/infoCards/skills.js';
 
-
 const Home = () => {
     return (
         <div>

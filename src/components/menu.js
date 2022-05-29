@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 import '../styles/hideScrollbar.css';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const NaviButton = styled.div`
     margin-top: 50px;
@@ -16,7 +17,6 @@ const NaviButton = styled.div`
     // background-color: red;
 `
 const LeftArrow = styled.div`
-    margin-left: 20px;
     transition: 0.3s;
     &:hover {
         cursor: pointer;
@@ -25,7 +25,6 @@ const LeftArrow = styled.div`
 `
 
 const RightArrow = styled.div`
-    margin-right: 20px;
     transition: 0.3s;
     &:hover {
         transform: translateX(5px)
@@ -174,7 +173,7 @@ function LeftClick() {
   
     return (
         <NaviButton disabled={isFirstItemVisible} onClick={() => clickHandler()}>
-            <LeftArrow>&#9664;</LeftArrow>
+            <LeftArrow><IoIosArrowBack/></LeftArrow>
         </NaviButton>
     );
 }
@@ -207,7 +206,7 @@ function RightClick() {
 
     return (
         <NaviButton disabled={isLastItemVisible} onClick={() => clickHandler()}>
-            <RightArrow>&#9654;</RightArrow>
+            <RightArrow><IoIosArrowForward/></RightArrow>
         </NaviButton>
     );
 }   

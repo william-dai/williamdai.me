@@ -90,8 +90,8 @@ const Skills = () => {
     
     useEffect(() => {
         ScrollReveal().reveal(cardContainer.current, {delay: 0, duration: 2000, distance: '50px'});
-        ScrollReveal().reveal(textContainer.current, {delay: 1500, duration: 1000, distance: '10px'});
-        ScrollReveal().reveal(LogoContainer.current, {delay: 2000, duration: 1000, distance: '10px'});
+        ScrollReveal().reveal(textContainer.current, {delay: 1000, duration: 1000});
+        ScrollReveal().reveal(LogoContainer.current, {delay: 1500, duration: 1000});
     }, []);
 
     return (
@@ -105,7 +105,7 @@ const Skills = () => {
                     <b>Languages</b>
                 </Description>
                 
-                <div style={{marginLeft: '1.3%', marginTop: '5px', width: '96%'}}>
+                <div style={{marginLeft: '1.5%', marginTop: '5px', width: '96%'}}>
                     {HorizontalMenu(languages)}
                 </div>
                 
@@ -113,7 +113,7 @@ const Skills = () => {
                     <b>Technologies</b>
                 </Description>
 
-                <div style={{marginLeft: '1.3%',marginTop: '5px', width: '96%'}}>
+                <div style={{marginLeft: '1.5%',marginTop: '5px', width: '96%'}}>
                     {HorizontalMenu(technologies)}
                 </div>
 
