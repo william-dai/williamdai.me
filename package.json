@@ -1,25 +1,26 @@
 {
-  "name": "website",
+  "name": "william-dai-s-website",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "william-dai-s-website",
+  "author": "William",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "gatsby": "^4.15.1",
+    "babel-plugin-styled-components": "^2.0.7",
+    "gatsby": "^4.15.0",
     "gatsby-plugin-styled-components": "^5.15.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "scrollreveal": "^4.0.9",
     "styled-components": "^5.3.5"
-  },
-  "devDependencies": {
-    "babel-plugin-styled-components": "^2.0.7"
-  },
-  "resolutions": {
-    "styled-components": "^5"
   }
 }

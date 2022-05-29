@@ -1,15 +1,15 @@
 import React from 'react';
-// import Navibar from '../components/navibar.js';
+import Navibar from '../components/navibar.js';
 import IntroCard from '../components/introcard.js';
-// import Title from '../components/title.js';
+import Title from '../components/title.js';
 import GlobalStyle from '../styles/globalStyle.js';
 
 const Home = () => {
     return (
         <div>
             <GlobalStyle/>
-            {/* <Navibar/>
-            <Title/> */}
+            <Navibar/>
+            <Title/>
             <IntroCard/>
         </div>
     )
