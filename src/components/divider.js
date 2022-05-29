@@ -5,6 +5,7 @@ import ScrollReveal from 'scrollreveal';
 const Divide = styled.div`
     position: relative;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
     margin: auto;
@@ -25,6 +26,15 @@ const Divide = styled.div`
         margin-top: 100px;
         width: 92%;
     }
+
+    @media (max-height: 888px) {
+        margin-top: 200px;
+    }
+
+    @media (max-height: 720px) {
+        margin-top: 100px;
+    }
+
 `;
 
 const Line = styled.div`
@@ -35,6 +45,7 @@ const Line = styled.div`
 `;
 
 const Font = styled.h3`
+    white-space: nowrap;
     font-weight: bold;
     font-size: 24px;
 `;

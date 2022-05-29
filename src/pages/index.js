@@ -1,10 +1,10 @@
 import React from 'react';
 import Navibar from '../components/navibar.js';
 import Divider from '../components/divider.js';
-import AboutMe from '../components/aboutMe.js';
-import Title from '../components/title.js';
-import Skills from '../components/skills.js';
 import GlobalStyle from '../styles/globalStyle.js';
+import Title from '../components/infoCards/title.js';
+import AboutMe from '../components/infoCards/aboutMe.js';
+import Skills from '../components/infoCards/skills.js';
 
 
 const Home = () => {
@@ -16,9 +16,8 @@ const Home = () => {
             <AboutMe/>
             {Divider('Skills')}
             <Skills/>
-            <AboutMe/>
-            <AboutMe/>
-            <AboutMe/>
+            {Divider('Academica & Work')}
+            <Skills/>
         </div>
     )
 }

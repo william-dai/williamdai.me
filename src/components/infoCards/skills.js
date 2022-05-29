@@ -1,24 +1,24 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import ScrollReveal from 'scrollreveal';
-import HorizontalMenu from './menu.js';
+import HorizontalMenu from '../menu.js';
 
-import CPlusLogo from "../images/C++.png";
-import CLangLogo from "../images/C.png";
-import JavaScriptLogo from '../images/JavaScript.png';
-import PythonLogo from '../images/Python.png';
-import SQLLogo from '../images/SQL.png';
-import HTML5Logo from '../images/HTML5.png';
-import CSS3Logo from '../images/CSS3.png';
-import ReactLogo from '../images/React.png';
-import ReactNativeLogo from '../images/ReactNative.png';
-import NodeLogo from '../images/Node.png';
-import ExpressLogo from '../images/Express.png';
-import PostgreSQLLogo from '../images/PostgreSQL.png';
-import FirebaseLogo from '../images/Firebase.png';
-import DockerLogo from '../images/Docker.png';
-import UnixLogo from '../images/Unix.png';
-import GitLogo from '../images/Git.png';
+import CPlusLogo from "../../images/C++.png";
+import CLangLogo from "../../images/C.png";
+import JavaScriptLogo from '../../images/JavaScript.png';
+import PythonLogo from '../../images/Python.png';
+import SQLLogo from '../../images/SQL.png';
+import HTML5Logo from '../../images/HTML5.png';
+import CSS3Logo from '../../images/CSS3.png';
+import ReactLogo from '../../images/React.png';
+import ReactNativeLogo from '../../images/ReactNative.png';
+import NodeLogo from '../../images/Node.png';
+import ExpressLogo from '../../images/Express.png';
+import PostgreSQLLogo from '../../images/PostgreSQL.png';
+import FirebaseLogo from '../../images/Firebase.png';
+import DockerLogo from '../../images/Docker.png';
+import UnixLogo from '../../images/Unix.png';
+import GitLogo from '../../images/Git.png';
 
 const Card = styled.div`
     position: relative;
