@@ -17,7 +17,12 @@ const Divide = styled.div`
         width: 70%
     }
 
+    @media (max-width: 720px) {
+        margin-top: 200px;
+    }
+
     @media (max-width: 600px) {
+        margin-top: 100px;
         width: 92%;
     }
 `;

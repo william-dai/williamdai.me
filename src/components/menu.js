@@ -90,6 +90,7 @@ const getItems = (arr) => {
 }
 
 const HorizontalMenu = (arr) => {
+    // eslint-disable-next-line no-unused-vars
     const [items, setItems] = React.useState(getItems(arr));
     const [selected, setSelected] = React.useState([]);
     // const [position, setPosition] = React.useState(0);
@@ -154,6 +155,7 @@ function LeftClick() {
         initComplete
     } = React.useContext(VisibilityContext);
 
+    // eslint-disable-next-line no-unused-vars
     const [disabled, setDisabled] = React.useState(
         !initComplete || (initComplete && isFirstItemVisible)
     );
@@ -168,12 +170,6 @@ function LeftClick() {
     const clickHandler = () => {
         const prevItem = getPrevItem();
         scrollToItem(prevItem?.entry?.target, "smooth", "start");
-        // OR
-        // scrollToItem(
-        //   getItemById(visibleItemsWithoutSeparators.slice(-2)[0]),
-        //   "smooth",
-        //   "end"
-        // );
     };
   
     return (
@@ -194,6 +190,7 @@ function RightClick() {
           visibleItemsWithoutSeparators
     } = React.useContext(VisibilityContext);
 
+    // eslint-disable-next-line no-unused-vars
     const [disabled, setDisabled] = React.useState(
         !visibleItemsWithoutSeparators.length && isLastItemVisible
     );
@@ -203,16 +200,9 @@ function RightClick() {
         }
     }, [isLastItemVisible, visibleItemsWithoutSeparators]);
 
-    // NOTE: for scroll 1 item
     const clickHandler = () => {
         const nextItem = getNextItem();
         scrollToItem(nextItem?.entry?.target, "smooth", "end");
-        // OR
-        // scrollToItem(
-        //   getItemById(visibleItemsWithoutSeparators[1]),
-        //   "smooth",
-        //   "start"
-        // );
     };
 
     return (

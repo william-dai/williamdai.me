@@ -13,6 +13,12 @@ import CSS3Logo from '../images/CSS3.png';
 import ReactLogo from '../images/React.png';
 import ReactNativeLogo from '../images/ReactNative.png';
 import NodeLogo from '../images/Node.png';
+import ExpressLogo from '../images/Express.png';
+import PostgreSQLLogo from '../images/PostgreSQL.png';
+import FirebaseLogo from '../images/Firebase.png';
+import DockerLogo from '../images/Docker.png';
+import UnixLogo from '../images/Unix.png';
+import GitLogo from '../images/Git.png';
 
 const Card = styled.div`
     position: relative;
@@ -68,14 +74,14 @@ const Skills = () => {
     ];
     const technologies = [
         ['React.js', ReactLogo],
-        ['React Native', ReactNativeLogo],
         ['Node.js', NodeLogo],
-        ['Express.js', null],
-        ['PostgreSQL', null],
-        ['Firebase', null],
-        ['Docker', null],
-        ['Unix', null],
-        ['Git', null]
+        ['Express.js', ExpressLogo],
+        ['React Native', ReactNativeLogo],
+        ['PostgreSQL', PostgreSQLLogo],
+        ['Firebase', FirebaseLogo],
+        ['Docker', DockerLogo],
+        ['Git', GitLogo],
+        ['Unix', UnixLogo]
     ]
 
     const cardContainer = useRef(null);
