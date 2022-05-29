@@ -33,7 +33,7 @@ const Title = () => {
     const revealContainer = useRef(null);
 
     useEffect(() => {
-        ScrollReveal().reveal(revealContainer.current, {delay: 1000, distance: '50px', origin: 'top'});
+        ScrollReveal().reveal(revealContainer.current, {delay: 1500, duration: 1000, distance: '50px', origin: 'top'});
     }, []);
 
     return (

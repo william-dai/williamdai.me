@@ -1,8 +1,11 @@
 import React from 'react';
 import Navibar from '../components/navibar.js';
-import IntroCard from '../components/introcard.js';
+import Divider from '../components/divider.js';
+import AboutMe from '../components/aboutMe.js';
 import Title from '../components/title.js';
+import Skills from '../components/skills.js';
 import GlobalStyle from '../styles/globalStyle.js';
+
 
 const Home = () => {
     return (
@@ -10,7 +13,12 @@ const Home = () => {
             <GlobalStyle/>
             <Navibar/>
             <Title/>
-            <IntroCard/>
+            <AboutMe/>
+            {Divider('Skills')}
+            <Skills/>
+            <AboutMe/>
+            <AboutMe/>
+            <AboutMe/>
         </div>
     )
 }

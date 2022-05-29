@@ -22,9 +22,13 @@ const Card = styled.div`
     }
 
     @media (max-width: 968px) {
-        height: 600px;
+        height: 550px;
         flex-direction: column;
         align-items: start;
+    }
+
+    @media (max-width: 720px) {
+        height: 600px;
     }
 
     @media (max-width: 600px) {
@@ -86,15 +90,15 @@ const AvatarBorder = styled.div`
     }
 `;
 
-const IntroCard = () => {
+const AboutMe = () => {
     const cardContainer = useRef(null);
     const avatarContainer = useRef(null);
     const textContainer = useRef(null);
 
     useEffect(() => {
-        ScrollReveal().reveal(cardContainer.current, {duration: 1500, distance: '50px'});
+        ScrollReveal().reveal(cardContainer.current, {delay: 0, duration: 2000, distance: '50px'});
         ScrollReveal().reveal(textContainer.current, {delay: 1500, duration: 1000, distance: '10px'});
-        ScrollReveal().reveal(avatarContainer.current, {delay: 100, duration: 1000});
+        ScrollReveal().reveal(avatarContainer.current, {delay: 2000, duration: 1000, distance: '10px'});
     }, []);
 
     return (
@@ -111,4 +115,4 @@ const IntroCard = () => {
     )
 }
 
-export default IntroCard;
+export default AboutMe;
