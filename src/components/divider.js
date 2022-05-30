@@ -45,6 +45,7 @@ const Line = styled.div`
 `;
 
 const Font = styled.h3`
+    margin-right: 3px;
     white-space: nowrap;
     font-weight: bold;
     font-size: 24px;

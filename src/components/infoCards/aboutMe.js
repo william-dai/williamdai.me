@@ -92,8 +92,8 @@ const AvatarBorder = styled.div`
 
 const AboutMe = () => {
     const cardContainer = useRef(null);
-    const avatarContainer = useRef(null);
     const textContainer = useRef(null);
+    const avatarContainer = useRef(null);
 
     useEffect(() => {
         ScrollReveal().reveal(cardContainer.current, {delay: 0, duration: 2000, distance: '50px'});
