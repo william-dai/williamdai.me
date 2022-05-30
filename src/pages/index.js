@@ -7,6 +7,7 @@ import AboutMe from '../components/infoCards/aboutMe.js';
 import Skills from '../components/infoCards/skills.js';
 import Experience from '../components/infoCards/experience.js';
 import Footer from '../components/footer.js';
+import Social from '../components/social.js';
 
 import CPlusLogo from "../images/C++.png";
 import CLangLogo from "../images/C.png";
@@ -58,6 +59,7 @@ const Home = () => {
             {Skills(languages, technologies)}
             {Divider('Education & Work')}
             <Experience/>
+            <Social/>
             <Footer/>
         </div>
     )

@@ -27,7 +27,7 @@ const Header = styled.h1`
     animation-fill-mode: both;
     
     @media (max-width: 540px) {
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 `;
 
@@ -61,7 +61,8 @@ const NaviButton = styled.button`
     animation-fill-mode: both;
 
     @media (max-width: 540px) {
-        margin-right: 0px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
   
     font-size: 16px;
