@@ -81,7 +81,7 @@ const Footer = () => {
     return (
         <Foot ref={fontContainer}>
             <SocialDiv>
-                <HorizontalLine style={{width: '130px'}}/>
+                <HorizontalLine style={{width: '90px'}}/>
                 <a href="mailto:w.dai1150@gmail.com" target="_blank" rel="noreferrer">
                     <Icons>
                         <AiFillMail color='rgba(17, 29, 58)'/>
@@ -97,7 +97,7 @@ const Footer = () => {
                         <AiFillGithub color='rgba(17, 29, 58)'/>
                     </Icons>
                 </a>
-                <HorizontalLine style={{width: '130px'}}/>
+                <HorizontalLine style={{width: '90px'}}/>
             </SocialDiv>
             <a href="https://github.com/william-dai/william-dai.com" target="_blank" rel="noreferrer">
                 <Font>
