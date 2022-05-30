@@ -6,6 +6,7 @@ import Title from '../components/infoCards/title.js';
 import AboutMe from '../components/infoCards/aboutMe.js';
 import Skills from '../components/infoCards/skills.js';
 import Experience from '../components/infoCards/experience.js';
+import Footer from '../components/footer.js';
 
 import CPlusLogo from "../images/C++.png";
 import CLangLogo from "../images/C.png";
@@ -47,22 +48,6 @@ const Home = () => {
         ['Unix', UnixLogo]
     ]
 
-    const courses = [
-        'CSE13S: Comp Sys and C Programming',
-        'CSE101: Data Structures & Algorithms',
-        'CSE102: Introduction to Analysis of Algorithms',
-        'CSE103: Computational Models',
-        'CSE112: Comparative Programming Langauges',
-        'CSE115A: Introduction to Computer Engineering',
-        'CSE120: Computer Architecture',
-        'CSE130: Principles of Computer Systems Design',
-        'CSE143: Natural Language Processing',
-        'CSE144: Applied Machine Learning',
-        'CSE180: Database Systems I',
-        'CSE183: Web Applications',
-        'STAT131: Introduction to Probability Theory'
-    ]
-
     return (
         <div>
             <GlobalStyle/>
@@ -72,7 +57,8 @@ const Home = () => {
             {Divider('Skills')}
             {Skills(languages, technologies)}
             {Divider('Education & Work')}
-            {Experience(courses)}
+            <Experience/>
+            <Footer/>
         </div>
     )
 }

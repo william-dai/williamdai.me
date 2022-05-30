@@ -104,11 +104,11 @@ const AboutMe = () => {
     return (
         <Card ref={cardContainer}>
             <Description ref={textContainer}>
-                Hello! Glad that you could access my website. My name is William and I’m an aspiring software  engineer based in the Bay Area. I attended the University of California, Santa Cruz, where I majored in Computer Science.
+                Hello! Glad that you could access my website. My name is William and I&apos;m an aspiring software engineer and technology enthusiast based in the Bay Area. I attended the University of California, Santa Cruz, where I majored in Computer Science.
                 <br/><br/>
-                My interest in the technology field stems from a love of technology and logical intuition. I love staying in touch with the latest in the tech world, whether it’s vehicles, phones, and software. 
+                My interest in the technology field stems from a love of technology and logical intuition. I love staying in touch with the latest in the tech world, whether it&apos;s vehicles, phones, or software. 
                 <br/><br/>
-                Programming to me is a way to engage in an analytic process that I really enjoy, especially when I am able to create and present digital things to others. I’m always interested in tackling challenges, and developing projects and concepts help me fulfill my ambitious spirit.
+                Programming to me is a way to engage in an analytic process that I really enjoy, especially when I am able to create and present digital things to others. I&apos;m always interested in tackling challenges, and developing projects and concepts help me fulfill my ambitious spirit.
             </Description>
             <AvatarBorder ref={avatarContainer}><Avatar></Avatar></AvatarBorder>
         </Card>
