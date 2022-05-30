@@ -6,6 +6,7 @@ import Title from '../components/infoCards/title.js';
 import AboutMe from '../components/infoCards/aboutMe.js';
 import Skills from '../components/infoCards/skills.js';
 import Experience from '../components/infoCards/experience.js';
+import Projects from '../components/infoCards/projects.js';
 import Footer from '../components/footer.js';
 import Social from '../components/social.js';
 
@@ -59,6 +60,8 @@ const Home = () => {
             {Skills(languages, technologies)}
             {Divider('Education & Work')}
             <Experience/>
+            {Divider('Projects')}
+            <Projects/>
             <Social/>
             <Footer/>
         </div>
