@@ -26,11 +26,14 @@ const Header = styled.h1`
     animation-delay: 0s;
     animation-fill-mode: both;
     
+    @media (max-width: 540px) {
+        justify-content: space-evenly;
+    }
 `;
 
 
 const NaviButton = styled.button`
-    margin-right: 40px;
+    margin-right: 15px;
     width: 110px;
     height: 45px;
     background-color: transparent;
@@ -57,13 +60,17 @@ const NaviButton = styled.button`
     animation-delay: 0.5s;
     animation-fill-mode: both;
 
+    @media (max-width: 540px) {
+        margin-right: 0px;
+    }
+  
     font-size: 16px;
 `;
 
 const Navibar = () => {
     const NaviWrapper = (text, link) => (
-        <a href="/resume.pdf" target='_blank' rel='noopener noreferrer'>
-            <NaviButton>{text}</NaviButton>
+        <a href={link} target='_blank' rel='noopener noreferrer'>
+            <NaviButton type="button">{text}</NaviButton>
         </a>
     )
 

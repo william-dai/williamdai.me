@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "antd": "^4.20.6",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^4.15.0",
     "gatsby-plugin-styled-components": "^5.15.0",
@@ -22,6 +23,7 @@
     "react-dom": "^17.0.1",
     "react-horizontal-scrolling-menu": "^2.8.2",
     "react-icons": "^4.3.1",
+    "react-transition-group": "^4.4.2",
     "scrollreveal": "^4.0.9",
     "styled-components": "^5.3.5"
   }
