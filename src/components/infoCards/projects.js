@@ -351,7 +351,7 @@ const Projects = () => {
                             <Description>
                                 A music discovery mobile application built for Android, written in JavaScript. Curates music for a user based
                                 on what nearby users around them are listening to on Spotify. Pulls information using real-time tracking, geolocation, and
-                                Spotify’s servers and displays user information on the app’s map view.
+                                Spotify&apos;s servers and displays user information on the app&apos;s map view.
                             </Description>
                             <Description>
                                 <b>Tech Stack:</b>

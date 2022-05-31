@@ -7,6 +7,7 @@ import AboutMe from '../components/infoCards/aboutMe.js';
 import Skills from '../components/infoCards/skills.js';
 import Experience from '../components/infoCards/experience.js';
 import Projects from '../components/infoCards/projects.js';
+import Closure from '../components/infoCards/closure.js';
 import Footer from '../components/footer.js';
 import Social from '../components/social.js';
 
@@ -63,6 +64,8 @@ const Home = () => {
             {Divider('Notable Projects')}
             <Projects/>
             <Social/>
+            {Divider('Closure')}
+            <Closure/>
             <Footer/>
         </div>
     )
