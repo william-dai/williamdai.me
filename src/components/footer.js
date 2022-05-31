@@ -47,7 +47,7 @@ const SocialDiv = styled.div`
     }
 `;
 
-const Font = styled.h4`
+const Font = styled.h5`
     color: rgba(200, 200, 200);
 
     transition: 0.3s;
@@ -81,7 +81,7 @@ const Footer = () => {
     return (
         <Foot ref={fontContainer}>
             <SocialDiv>
-                <HorizontalLine style={{width: '90px'}}/>
+                <HorizontalLine style={{width: '9W0px'}}/>
                 <a href="mailto:w.dai1150@gmail.com" target="_blank" rel="noreferrer">
                     <Icons>
                         <AiFillMail color='rgba(17, 29, 58)'/>

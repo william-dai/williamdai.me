@@ -357,7 +357,7 @@ const Projects = () => {
                                 <b>Tech Stack:</b>
                                 <ul style={{listStylePosition: 'outside', marginLeft: '1em', lineHeight: '2em'}}>
                                     <li>Language: JavaScript</li>
-                                    <li>Framework: React Native</li>
+                                    <li>Framework: React Native (React.js)</li>
                                     <li>Technologies: Google Firebase</li>
                                 </ul>
                             </Description>
@@ -461,7 +461,7 @@ const Projects = () => {
                             <b>Spotify GO</b>
                         </Title>
                         <Subtitle>
-                            Music discovery mobile application, built for Android.
+                            Music discovery mobile application, built for Android. (Images Soon&#8482;)
                         </Subtitle>
                     </ProjectCard>
 
@@ -480,7 +480,7 @@ const Projects = () => {
                             <b>LZ78 Compression</b>
                         </Title>
                         <Subtitle>
-                            Data compression program based on the LZ78 Compression algorithm.
+                            Data compression program based on the LZ78 Compression algorithm. (Images Soon&#8482;)
                         </Subtitle>
                     </ProjectCard>
                 </Grid>
