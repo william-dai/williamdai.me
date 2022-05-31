@@ -60,7 +60,7 @@ const Home = () => {
             {Skills(languages, technologies)}
             {Divider('Education & Work')}
             <Experience/>
-            {Divider('Projects')}
+            {Divider('Notable Projects')}
             <Projects/>
             <Social/>
             <Footer/>

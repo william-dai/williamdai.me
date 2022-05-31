@@ -53,21 +53,6 @@ const Description = styled.div`
     }
 `;
 
-const Avatar = styled.div`
-    position: relative;
-    right: 10px;
-    top: -10px;
-    width: 180px;
-    height: 180px;
-    background-color: rgba(17, 29, 58);
-    border-radius: 7px;
-    transition: 0.3s;
-
-    &:hover {
-        transform: translateX(5px) translateY(5px)
-    }
-`
-
 const AvatarBorder = styled.div`
     position: relative;
     right: 40px;
@@ -89,6 +74,21 @@ const AvatarBorder = styled.div`
         left: -5px;
     }
 `;
+
+const Avatar = styled.div`
+    position: relative;
+    right: 10px;
+    top: -10px;
+    width: 180px;
+    height: 180px;
+    background-color: rgba(17, 29, 58);
+    border-radius: 7px;
+    transition: 0.3s;
+
+    &:hover {
+        transform: translateX(5px) translateY(5px)
+    }
+`
 
 const AboutMe = () => {
     const cardContainer = useRef(null);

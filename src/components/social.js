@@ -60,13 +60,13 @@ const Social = () => {
                 </Icons>
             </a>
             <br/>
-            <a href="https://github.com/william-dai" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/widai/" target="_blank" rel="noreferrer">
                 <Icons>
                     <AiFillLinkedin color='rgba(17, 29, 58)'/>
                 </Icons>
             </a>
             <br/>
-            <a href="https://www.linkedin.com/in/widai/" target="_blank" rel="noreferrer">
+            <a href="https://github.com/william-dai" target="_blank" rel="noreferrer">
                 <Icons>
                     <AiFillGithub color='rgba(17, 29, 58)'/>
                 </Icons>
