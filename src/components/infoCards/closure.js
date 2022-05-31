@@ -9,7 +9,7 @@ const Card = styled.div`
     justify-content: flex-start;
     align-items: center;
     margin: auto;
-    height: 240px;
+    height: 260px;
     background-color: white;
     border-radius: 16px;
     box-shadow: 0px 4px 51px 0px rgba(138, 89, 201, 0.18);
@@ -17,7 +17,7 @@ const Card = styled.div`
     visibility: hidden;
 
     @media (max-width: 1080px) {
-        height: 250px;
+        height: 280px;
         width: 70%
     }
 

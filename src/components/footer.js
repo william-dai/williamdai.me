@@ -81,7 +81,7 @@ const Footer = () => {
     return (
         <Foot ref={fontContainer}>
             <SocialDiv>
-                <HorizontalLine style={{width: '9W0px'}}/>
+                <HorizontalLine style={{width: '90px'}}/>
                 <a href="mailto:w.dai1150@gmail.com" target="_blank" rel="noreferrer">
                     <Icons>
                         <AiFillMail color='rgba(17, 29, 58)'/>
