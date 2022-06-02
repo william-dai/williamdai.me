@@ -286,164 +286,162 @@ const Projects = () => {
     return (
         <div>
             <Card ref={cardContainer}>
-            {!blur &&
-            <CardCover/>
-            }
-            {/* Personal Website Card */}
-            <CSSTransition
-                in={itemOne}
-                timeout={300}
-                classNames="menu"
-                unmountOnExit
-                onEnter={() => setBlur(false)}
-                onExited={() => setBlur(true)}
-            >
-                <Snippet style={{visibility: 'visible'}} variant="primary" dismissible onClose={() => setItemOne(false)}>
-                    <div style={{marginBottom: '20px', display: 'flex', justifyContent: 'space-between', alignContent: 'flex-start'}}>
-                        <BackButton onClick={() => setItemOne(false)}>
-                            <AiFillCaretLeft/>
-                            Close
-                        </BackButton>
-                        <a href="https://github.com/william-dai/william-dai.com" target="_blank" rel="noreferrer">
-                            <BackButton style={{left: '-10px'}}><AiFillGithub size={32}/></BackButton>
-                        </a>
-                    </div>
-                    <Outer>
-                        <Inner>
-                            <Description>
-                                My website that I designed as a side project, albeit I suppose everyone's got to do this one of these at some point.
-                                Outside of some dependency components (namely ScrollReveal, styled-components, React Transition Group, Ant Design, and
-                                React Icons), everything has been designed and coded from scratch. I hope you find it nice, I spent a lot of hours on it!
-                            </Description>
-                            <Description>
-                                <b>Tech Stack:</b>
-                                <ul style={{listStylePosition: 'outside', marginLeft: '1em', lineHeight: '2em'}}>
-                                    <li>Languages: JavaScript, HTML5, CSS3</li>
-                                    <li>Framework: Gatsby (React.js)</li>
-                                </ul>
-                            </Description>
-                        </Inner>
-                        <SnippetImage src={PersonalWebsitePreview} alt="Personal Website Preview"/>
-                        </Outer>
-                </Snippet>
-            </CSSTransition>
-
-
-            {/* Spotify GO Card */}
-            <CSSTransition
-                in={itemTwo}
-                timeout={300}
-                classNames="menu"
-                unmountOnExit
-                onEnter={() => setBlur(false)}
-                onExited={() => setBlur(true)}
-            >
-                <Snippet style={{visibility: 'visible'}} variant="primary" dismissible onClose={() => setItemTwo(false)}>
-                    <div style={{marginBottom: '20px', display: 'flex', justifyContent: 'space-between', alignContent: 'flex-start'}}>
-                        <BackButton onClick={() => setItemTwo(false)}>
-                            <AiFillCaretLeft/>
-                            Close
-                        </BackButton>
-                            <BackButton style={{left: '-10px', color: 'rgba(240, 240, 240)', cursor: 'default'}}><AiFillGithub size={32}/></BackButton>
-                    </div>
-                    <Outer>
-                        <Inner>
-                            <Description>
-                                A music discovery mobile application built for Android, written in JavaScript. Curates music for a user based
-                                on what nearby users around them are listening to on Spotify. Pulls information using real-time tracking, geolocation, and
-                                Spotify&apos;s servers and displays user information on the app&apos;s map view.
-                            </Description>
-                            <Description>
-                                <b>Tech Stack:</b>
-                                <ul style={{listStylePosition: 'outside', marginLeft: '1em', lineHeight: '2em'}}>
-                                    <li>Language: JavaScript</li>
-                                    <li>Framework: React Native (React.js)</li>
-                                    <li>Technologies: Google Firebase</li>
-                                </ul>
-                            </Description>
-                        </Inner>
-                        </Outer>
-                </Snippet>
-            </CSSTransition>
-
-
-            {/* Slack Clone Card */}
-            <CSSTransition
-                in={itemThree}
-                timeout={300}
-                classNames="menu"
-                unmountOnExit
-                onEnter={() => setBlur(false)}
-                onExited={() => setBlur(true)}
-            >
-                <Snippet style={{visibility: 'visible'}} variant="primary" dismissible onClose={() => setItemThree(false)}>
-                    <div style={{marginBottom: '20px', display: 'flex', justifyContent: 'space-between', alignContent: 'flex-start'}}>
-                        <BackButton onClick={() => setItemThree(false)}>
-                            <AiFillCaretLeft/>
-                            Close
-                        </BackButton>
-                        <a href="https://github.com/william-dai/slack-clone" target="_blank" rel="noreferrer">
-                            <BackButton style={{left: '-10px'}}><AiFillGithub size={32}/></BackButton>
-                        </a>
-                    </div>
-                    <Outer>
-                        <Inner>
-                            <Description>
-                                A communications web application that mimics the Slack software, using React.js and written in JavaScript.
-                                Features much of the same functionality, including login and authentication, users, servers, channels, and messaging.
-                            </Description>
-                            <Description>
-                                <b>Tech Stack:</b>
-                                <ul style={{listStylePosition: 'outside', marginLeft: '1em', lineHeight: '2em'}}>
-                                    <li>Languages: JavaScript, SQL</li>
-                                    <li>Technologies: React.js, Node.js, Express.js, PostgreSQL, Docker</li>
-                                    <li>Frontend: MUI</li>
-                                </ul>
-                            </Description>
-                        </Inner>
-                        <MultiImage>
-                            <SnippetImage src={SlackClonePreview1} alt="Slack Clone Preview 1"/>
-                            <SnippetImage src={SlackClonePreview2} alt="Slack Clone Preview 2"/>
-                            <SnippetImage src={SlackClonePreview3} alt="Slack Clone Preview 3"/>
-                        </MultiImage>
-                        </Outer>
-                </Snippet>
-            </CSSTransition>
-
-            {/* Compression Card */}
-            <CSSTransition
-                in={itemFour}
-                timeout={300}
-                classNames="menu"
-                unmountOnExit
-                onEnter={() => setBlur(false)}
-                onExited={() => setBlur(true)}
-            >
-                <Snippet style={{visibility: 'visible'}} variant="primary" dismissible onClose={() => setItemFour(false)}>
-                    <div style={{marginBottom: '20px', display: 'flex', justifyContent: 'space-between', alignContent: 'flex-start'}}>
-                        <BackButton onClick={() => setItemFour(false)}>
-                            <AiFillCaretLeft/>
-                            Close
-                        </BackButton>
-                            <BackButton style={{left: '-10px', color: 'rgba(240, 240, 240)', cursor: 'default'}}><AiFillGithub size={32}/></BackButton>
-                    </div>
-                    <Outer>
-                        <Inner>
-                            <Description>
-                                A data compression program written in C with a command line interface on Unix Bash that utilizes the LZ78
-                                algorithm to compress inputted files with strings and then decompress them using two respective executables.
-                            </Description>
-                            <Description>
-                                <b>Tech Stack:</b>
-                                <ul style={{listStylePosition: 'outside', marginLeft: '1em', lineHeight: '2em'}}>
-                                    <li>Language: C</li>
-                                </ul>
-                            </Description>
-                        </Inner>
-                        </Outer>
-                </Snippet>
-            </CSSTransition>
-
+                {!blur && <CardCover/>}
+        
+                {/* Personal Website Card */}
+                <CSSTransition
+                    in={itemOne}
+                    timeout={300}
+                    classNames="menu"
+                    unmountOnExit
+                    onEnter={() => setBlur(false)}
+                    onExited={() => setBlur(true)}
+                >
+                    <Snippet style={{visibility: 'visible'}} variant="primary" dismissible onClose={() => setItemOne(false)}>
+                        <div style={{marginBottom: '20px', display: 'flex', justifyContent: 'space-between', alignContent: 'flex-start'}}>
+                            <BackButton onClick={() => setItemOne(false)}>
+                                <AiFillCaretLeft/>
+                                Close
+                            </BackButton>
+                            <a href="https://github.com/william-dai/william-dai.com" target="_blank" rel="noreferrer">
+                                <BackButton style={{left: '-10px'}}><AiFillGithub size={32}/></BackButton>
+                            </a>
+                        </div>
+                        <Outer>
+                            <Inner>
+                                <Description>
+                                    My website that I designed as a side project, albeit I suppose everyone's got to do this one of these at some point.
+                                    Outside of some dependency components (namely ScrollReveal, styled-components, React Transition Group, Ant Design, and
+                                    React Icons), everything has been designed and coded from scratch. I hope you find it nice, I spent a lot of hours on it!
+                                </Description>
+                                <Description>
+                                    <b>Tech Stack:</b>
+                                    <ul style={{listStylePosition: 'outside', marginLeft: '1em', lineHeight: '2em'}}>
+                                        <li>Languages: JavaScript, HTML5, CSS3</li>
+                                        <li>Framework: Gatsby (React.js)</li>
+                                    </ul>
+                                </Description>
+                            </Inner>
+                            <SnippetImage src={PersonalWebsitePreview} alt="Personal Website Preview"/>
+                            </Outer>
+                    </Snippet>
+                </CSSTransition>
+                                    
+                                    
+                {/* Spotify GO Card */}
+                <CSSTransition
+                    in={itemTwo}
+                    timeout={300}
+                    classNames="menu"
+                    unmountOnExit
+                    onEnter={() => setBlur(false)}
+                    onExited={() => setBlur(true)}
+                >
+                    <Snippet style={{visibility: 'visible'}} variant="primary" dismissible onClose={() => setItemTwo(false)}>
+                        <div style={{marginBottom: '20px', display: 'flex', justifyContent: 'space-between', alignContent: 'flex-start'}}>
+                            <BackButton onClick={() => setItemTwo(false)}>
+                                <AiFillCaretLeft/>
+                                Close
+                            </BackButton>
+                                <BackButton style={{left: '-10px', color: 'rgba(240, 240, 240)', cursor: 'default'}}><AiFillGithub size={32}/></BackButton>
+                        </div>
+                        <Outer>
+                            <Inner>
+                                <Description>
+                                    A music discovery mobile application built for Android, written in JavaScript. Curates music for a user based
+                                    on what nearby users around them are listening to on Spotify. Pulls information using real-time tracking, geolocation, and
+                                    Spotify&apos;s servers and displays user information on the app&apos;s map view.
+                                </Description>
+                                <Description>
+                                    <b>Tech Stack:</b>
+                                    <ul style={{listStylePosition: 'outside', marginLeft: '1em', lineHeight: '2em'}}>
+                                        <li>Language: JavaScript</li>
+                                        <li>Framework: React Native (React.js)</li>
+                                        <li>Technologies: Google Firebase</li>
+                                    </ul>
+                                </Description>
+                            </Inner>
+                            </Outer>
+                    </Snippet>
+                </CSSTransition>
+                                    
+                                    
+                {/* Slack Clone Card */}
+                <CSSTransition
+                    in={itemThree}
+                    timeout={300}
+                    classNames="menu"
+                    unmountOnExit
+                    onEnter={() => setBlur(false)}
+                    onExited={() => setBlur(true)}
+                >
+                    <Snippet style={{visibility: 'visible'}} variant="primary" dismissible onClose={() => setItemThree(false)}>
+                        <div style={{marginBottom: '20px', display: 'flex', justifyContent: 'space-between', alignContent: 'flex-start'}}>
+                            <BackButton onClick={() => setItemThree(false)}>
+                                <AiFillCaretLeft/>
+                                Close
+                            </BackButton>
+                            <a href="https://github.com/william-dai/slack-clone" target="_blank" rel="noreferrer">
+                                <BackButton style={{left: '-10px'}}><AiFillGithub size={32}/></BackButton>
+                            </a>
+                        </div>
+                        <Outer>
+                            <Inner>
+                                <Description>
+                                    A communications web application that mimics the Slack software, using React.js and written in JavaScript.
+                                    Features much of the same functionality, including login and authentication, users, servers, channels, and messaging.
+                                </Description>
+                                <Description>
+                                    <b>Tech Stack:</b>
+                                    <ul style={{listStylePosition: 'outside', marginLeft: '1em', lineHeight: '2em'}}>
+                                        <li>Languages: JavaScript, SQL</li>
+                                        <li>Technologies: React.js, Node.js, Express.js, PostgreSQL, Docker</li>
+                                        <li>Frontend: MUI</li>
+                                    </ul>
+                                </Description>
+                            </Inner>
+                            <MultiImage>
+                                <SnippetImage src={SlackClonePreview1} alt="Slack Clone Preview 1"/>
+                                <SnippetImage src={SlackClonePreview2} alt="Slack Clone Preview 2"/>
+                                <SnippetImage src={SlackClonePreview3} alt="Slack Clone Preview 3"/>
+                            </MultiImage>
+                            </Outer>
+                    </Snippet>
+                </CSSTransition>
+                                    
+                {/* Compression Card */}
+                <CSSTransition
+                    in={itemFour}
+                    timeout={300}
+                    classNames="menu"
+                    unmountOnExit
+                    onEnter={() => setBlur(false)}
+                    onExited={() => setBlur(true)}
+                >
+                    <Snippet style={{visibility: 'visible'}} variant="primary" dismissible onClose={() => setItemFour(false)}>
+                        <div style={{marginBottom: '20px', display: 'flex', justifyContent: 'space-between', alignContent: 'flex-start'}}>
+                            <BackButton onClick={() => setItemFour(false)}>
+                                <AiFillCaretLeft/>
+                                Close
+                            </BackButton>
+                                <BackButton style={{left: '-10px', color: 'rgba(240, 240, 240)', cursor: 'default'}}><AiFillGithub size={32}/></BackButton>
+                        </div>
+                        <Outer>
+                            <Inner>
+                                <Description>
+                                    A data compression program written in C with a command line interface on Unix Bash that utilizes the LZ78
+                                    algorithm to compress inputted files with strings and then decompress them using two respective executables.
+                                </Description>
+                                <Description>
+                                    <b>Tech Stack:</b>
+                                    <ul style={{listStylePosition: 'outside', marginLeft: '1em', lineHeight: '2em'}}>
+                                        <li>Language: C</li>
+                                    </ul>
+                                </Description>
+                            </Inner>
+                            </Outer>
+                    </Snippet>
+                </CSSTransition>
 
                 <Grid ref={projectContainer}>
                     <ProjectCard onClick={() => setItemOne(true)}>

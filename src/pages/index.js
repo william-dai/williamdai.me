@@ -29,6 +29,12 @@ import UnixLogo from '../images/Unix.png';
 import GitLogo from '../images/Git.png';
 
 const Home = () => {
+    const aboutMeDesc = [
+        "Hello! Glad that you could access my website. My name is William and I'm an aspiring software engineer and technology enthusiast based in the Bay Area. I attended the University of California, Santa Cruz, where I majored in Computer Science.",
+        "My interest in the technology field stems from a love of technology and logical intuition. I love staying in touch with the latest in the tech world, whether it's vehicles, phones, or software.",
+        "Programming to me is a way to engage in an analytic process that I really enjoy, especially when I am able to create and present digital things to others. I'm always interested in tackling challenges, and developing projects and concepts help me fulfill my ambitious spirit."
+    ]
+
     const languages = [
         ['C++', CPlusLogo],
         ['C', CLangLogo],
@@ -56,7 +62,7 @@ const Home = () => {
             <GlobalStyle/>
             <Navibar/>
             <Title/>
-            <AboutMe/>
+            {AboutMe(aboutMeDesc)}
             {Divider('Skills')}
             {Skills(languages, technologies)}
             {Divider('Education & Work')}
