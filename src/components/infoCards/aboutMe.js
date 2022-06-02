@@ -27,7 +27,7 @@ const Card = styled.div`
         align-items: start;
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 752px) {
         height: 600px;
     }
 
