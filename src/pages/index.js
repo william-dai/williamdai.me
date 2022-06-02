@@ -11,7 +11,7 @@ import Closure from '../components/infoCards/closure.js';
 import Footer from '../components/footer.js';
 import Social from '../components/social.js';
 
-import CPlusLogo from "../images/C++.png";
+import CPlusLogo from "../images/CPlusPlus.png";
 import CLangLogo from "../images/C.png";
 import JavaScriptLogo from '../images/JavaScript.png';
 import PythonLogo from '../images/Python.png';
