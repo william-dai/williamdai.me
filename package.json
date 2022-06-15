@@ -20,6 +20,7 @@
     "gatsby": "^4.15.0",
     "gatsby-plugin-manifest": "^4.16.0",
     "gatsby-plugin-styled-components": "^5.15.0",
+    "node-fetch": "^3.2.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-horizontal-scrolling-menu": "^2.8.2",
