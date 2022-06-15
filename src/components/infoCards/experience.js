@@ -8,11 +8,8 @@ const { TabPane } = Tabs;
 const Card = styled.div`
     position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     margin: auto;
-    height: 750px;
+    min-height: 400px;
     background-color: white;
     border-radius: 16px;
     box-shadow: 0px 4px 51px 0px rgba(138, 89, 201, 0.18);
@@ -23,22 +20,24 @@ const Card = styled.div`
         width: 70%
     }
 
-    @media (max-width: 920px) {
-        height: 820px;
-    }
-
     @media (max-width: 600px) {
-        height: 850px;
         width: 100%;
     }
+`;
+
+const Content = styled.section`
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 25px 25px 25px 25px;
+    width: 90%;
 `;
 
 const Description = styled.div`
     position: relative;
     text-align: center;
     width: 100%;
-    margin-top: 35px;
-
     font-size: 16px;
 
     @media (max-width: 1080px) {
@@ -51,7 +50,7 @@ const ScrollBox = styled.div`
     margin-top: 10px;
     height: 120px;
     width: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
 `
 
 const Experience = () => {
@@ -93,7 +92,7 @@ const Experience = () => {
 
     return (
         <Card ref={cardContainer}>
-            <div style={{width:'90%'}} ref={textContainer}>
+            <Content ref={textContainer}>
                 <Description>
                     <b>Education</b>
                 </Description>
@@ -123,6 +122,8 @@ const Experience = () => {
                         </TabPane>
                     </Tabs>
 
+                <div style={{height: '25px'}}/>
+
                 <Description ref={textContainer}>
                     <b>Work Experience</b>
                 </Description>
@@ -151,7 +152,7 @@ const Experience = () => {
                                 </ul>
                         </TabPane>
                     </Tabs>
-            </div>
+            </Content>
         </Card>
     )
 }

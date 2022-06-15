@@ -5,11 +5,10 @@ import ScrollReveal from 'scrollreveal';
 const Card = styled.div`
     position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
     margin: auto;
     margin-top: 360px;
-    height: 300px;
+    min-height: 300px;
     background-color: white;
     border-radius: 16px;
     box-shadow: 0px 4px 51px 0px rgba(138, 89, 201, 0.18);
@@ -17,46 +16,42 @@ const Card = styled.div`
     visibility: hidden;
 
     @media (max-width: 1080px) {
-        height: 340px;
-        width: 70%
-    }
-
-    @media (max-width: 968px) {
-        height: 550px;
-        flex-direction: column;
-        align-items: start;
-    }
-
-    @media (max-width: 752px) {
-        height: 600px;
+        width: 70%;
     }
 
     @media (max-width: 600px) {
         width: 100%;
     }
-    
-    @media (max-width: 480px) {
-        height: 650px;
+ 
+`;
+
+const Content = styled.section`
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px 25px 25px 25px;
+
+    @media (max-width: 968px) {
+        flex-direction: column;
+        align-items: start;
     }
 `;
 
 const Description = styled.div`
     position: relative;
-    left: 30px;
-    width: 60%;
-
+    width: 70%;
     font-size: 16px;
 
     @media (max-width: 968px) {
-        top: 30px;
-        width: 85%;
+        width: 100%;
     }
 `;
 
 const AvatarBorder = styled.div`
     position: relative;
-    right: 40px;
-    top: -15px;
+    top: 15px;
+    margin-left: 40px;
     width: 180px;
     height: 180px;
     background-color: transparent;
@@ -64,14 +59,10 @@ const AvatarBorder = styled.div`
     border-radius: 7px;
     visibility: hidden;
 
-    @media (max-width: 1080px) {
-        top: -35px;
-    }
-
     @media (max-width: 968px) {
         margin-left: auto;
         margin-right: auto;
-        left: -5px;
+        margin-bottom: 25px;
     }
 `;
 
@@ -97,10 +88,10 @@ const AboutMe = (desc) => {
 
     const descriptionFiller = (desc) => {
         return (
-            desc.map((index) => {
+            desc.map((desc, index) => {
                 return (
-                    <span>
-                        {index}
+                    <span key={index}>
+                        {desc}
                         <br/>
                         <br/>
                     </span>
@@ -117,10 +108,14 @@ const AboutMe = (desc) => {
 
     return (
         <Card ref={cardContainer}>
-            <Description ref={textContainer}>
-                {descriptionFiller(desc)}
-            </Description>
-            <AvatarBorder ref={avatarContainer}><Avatar></Avatar></AvatarBorder>
+            <Content>
+                <Description ref={textContainer}>
+                    {descriptionFiller(desc)}
+                </Description>
+                <AvatarBorder ref={avatarContainer}>
+                    <Avatar/>
+                </AvatarBorder>
+            </Content>
         </Card>
     )
 }
