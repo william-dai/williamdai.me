@@ -61,7 +61,7 @@ const Experience = () => {
         'CSE183: Web Applications',
         'CSE180: Database Systems I',
         'CSE144: Applied Machine Learning',
-        'CSE143: Natural Language Processing',
+        'CSE143: Introduction to Natural Language Processing',
         'CSE130: Principles of Computer Systems Design',
         'CSE120: Computer Architecture',
         'CSE115A: Introduction to Computer Engineering',

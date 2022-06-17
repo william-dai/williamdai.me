@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
     html, body {
         background-color: rgba(250, 250, 250);
+        scroll-behavior: smooth;
     }
 
     a {

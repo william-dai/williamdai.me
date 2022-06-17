@@ -63,7 +63,7 @@ const Closure = () => {
     useEffect(() => {
         ScrollReveal().reveal(cardContainer.current, {delay: 0, duration: 2000, distance: '50px'});
         ScrollReveal().reveal(textContainer.current, {delay: 250, duration: 1000, distance: '10px'});
-        ScrollReveal().reveal(buttonContainer.current, {delay: 250, duration: 1000, origin: 'bottom', distance: '100px'});
+        ScrollReveal().reveal(buttonContainer.current, {delay: 250, duration: 1000, origin: 'bottom', distance: '10px'});
     }, []);
 
     return (
