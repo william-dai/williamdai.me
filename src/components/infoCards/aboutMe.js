@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import ScrollReveal from 'scrollreveal';
 
+import Photo from '../../images/photo.png';
+
 const Card = styled.div`
     position: relative;
     display: flex;
@@ -68,6 +70,9 @@ const AvatarBorder = styled.div`
 
 const Avatar = styled.div`
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     right: 10px;
     top: -10px;
     width: 180px;
@@ -79,7 +84,19 @@ const Avatar = styled.div`
     &:hover {
         transform: translateX(5px) translateY(5px)
     }
-`
+`;
+
+const SelfImage = styled.img`
+    position: relative;
+    height: 94%;
+    border-radius: 7px;
+    opacity: 1;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.6;
+    }
+`;
 
 const AboutMe = (desc) => {
     const cardContainer = useRef(null);
@@ -113,7 +130,9 @@ const AboutMe = (desc) => {
                     {descriptionFiller(desc)}
                 </Description>
                 <AvatarBorder ref={avatarContainer}>
-                    <Avatar/>
+                    <Avatar>
+                        <SelfImage src={Photo} alt="Image of Me"/>
+                    </Avatar>
                 </AvatarBorder>
             </Content>
         </Card>
