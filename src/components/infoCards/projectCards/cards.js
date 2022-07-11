@@ -147,14 +147,16 @@ const CardTwo = (item, funcOne, funcTwo, funcThree) => {
                             <AiFillCaretLeft/>
                             Close
                         </BackButton>
-                        <BackButton style={{left: '-10px', color: 'rgba(240, 240, 240)', cursor: 'default'}}><AiFillGithub size={32}/></BackButton>
+                        <a href="https://github.com/ritwik-aluri/CSE115A-Spotify-GO" target="_blank" rel="noreferrer">
+                            <BackButton style={{left: '-10px'}}><AiFillGithub size={32}/></BackButton>
+                        </a>
                     </div>
                     <Outer>
                         <Inner>
                             <Description>
                                 A music discovery mobile application built for Android, written in JavaScript. Curates music for a user based
                                 on what nearby users around them are listening to on Spotify. Pulls information using real-time tracking, geolocation, and
-                                Spotify's servers and displays user information on the app's map view.
+                                Spotify's servers and displays nearby user songs and information on the app's map view.
                             </Description>
                             <Description>
                                 <b>Tech Stack:</b>
