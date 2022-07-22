@@ -252,8 +252,7 @@ const CardFour = (item, funcOne, funcTwo, funcThree) => {
                             <Description>
                                 <b>Tech Stack:</b>
                                 <ul style={{listStylePosition: 'outside', marginLeft: '1em', lineHeight: '2em'}}>
-                                    <li>Languages: JavaScript, HTML5, CSS3</li>
-                                    <li>Framework: Gatsby (React.js)</li>
+                                    <li>Languages: C</li>
                                 </ul>
                             </Description>
                         </Inner>
