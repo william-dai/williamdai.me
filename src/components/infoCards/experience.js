@@ -134,10 +134,10 @@ const Experience = () => {
                                 <b>Duration:</b> March 2021 &ndash; June 2021 <br/>
                                 <b>Information:</b> <br/>
                                 <ul style={{listStylePosition: 'outside', marginLeft: '1em'}}>
-                                    <li>Planned, organized, and led additional study sessions and lectures outside of class seminars.</li>
-                                    <li>Worked with students to complete coding assignments.</li>
-                                    <li>Covered fundamental C topics such as data structures, recursion, algorithms, hashing, and multi-threading.</li>
-                                    <li>Assisted the lead professor with grading exams, assignments, and lab reports.</li>
+                                    <li>Organized and hosted multiple additional lectures and study sessions accessed by 20+ students every week.</li>
+                                    <li>Worked with students to complete coding assignments and projects with high standards.</li>
+                                    <li>Covered fundamental C topics such as data structures, algorithms, and multi-threading.</li>
+                                    <li> Assisted the lead professor with grading exams, assignments, and lab reports for 200+ students.</li>
                                 </ul>
                         </TabPane>
                         <TabPane tab="Network Jupiter LLC" key="2">
@@ -146,9 +146,9 @@ const Experience = () => {
                                 <b>Duration:</b> June 2017 &ndash; May 2019 <br/>
                                 <b>Information:</b> <br/>
                                 <ul style={{listStylePosition: 'outside', marginLeft: '1em'}}>
-                                    <li>Managed and troubleshooted issues with company hardware and software.</li>
-                                    <li>Kept company systems up-to-date and managed backup operations.</li>
-                                    <li>Provided support for technical issues and answered company technology-related inquiries.</li>
+                                    <li>Maintained company infrastructure, and identified and troubleshooted network issues.</li>
+                                    <li>Provided technical training and support on software and hardware to end users.</li>
+                                    <li>Performed computer repair and maintenance, including parts replacement, software management, and system backup</li>
                                 </ul>
                         </TabPane>
                     </Tabs>

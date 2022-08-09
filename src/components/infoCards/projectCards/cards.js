@@ -241,13 +241,16 @@ const CardFour = (item, funcOne, funcTwo, funcThree) => {
                             <AiFillCaretLeft/>
                             Close
                         </BackButton>
-                        <BackButton style={{left: '-10px', color: 'rgba(240, 240, 240)', cursor: 'default'}}><AiFillGithub size={32}/></BackButton>
+                        <a href="https://github.com/william-dai/LZ78-Compression" target="_blank" rel="noreferrer">
+                            <BackButton style={{left: '-10px'}}><AiFillGithub size={32}/></BackButton>
+                        </a>
                     </div>
                     <Outer>
                         <Inner>
                             <Description>
                                 A data compression program written in C with a command line interface on Unix Bash that utilizes the LZ78
-                                algorithm to compress inputted files with strings and then decompress them using two respective executables.
+                                algorithm to compress inputted files with strings and then decompress them using two respective executables. 
+                                Compresses a file by 30% on average.
                             </Description>
                             <Description>
                                 <b>Tech Stack:</b>

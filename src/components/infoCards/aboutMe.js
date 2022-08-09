@@ -98,6 +98,13 @@ const SelfImage = styled.img`
     }
 `;
 
+const Button = styled.div`
+    position: relative;
+    height: 100px;
+    width: 50px;
+    background-color: rgba(17, 29, 58);
+`;
+
 const AboutMe = (desc) => {
     const cardContainer = useRef(null);
     const textContainer = useRef(null);
@@ -129,11 +136,11 @@ const AboutMe = (desc) => {
                 <Description ref={textContainer}>
                     {descriptionFiller(desc)}
                 </Description>
-                <AvatarBorder ref={avatarContainer}>
-                    <Avatar>
-                        <SelfImage src={Photo} alt="Image of Me"/>
-                    </Avatar>
-                </AvatarBorder>
+                    <AvatarBorder ref={avatarContainer}>
+                        <Avatar>
+                            <SelfImage src={Photo} alt="Image of Me"/>
+                        </Avatar>
+                    </AvatarBorder>
             </Content>
         </Card>
     )
