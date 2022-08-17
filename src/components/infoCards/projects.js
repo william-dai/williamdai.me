@@ -182,7 +182,7 @@ const Projects = () => {
                             <b>Spotify GO</b>
                         </Title>
                         <Subtitle>
-                            Music discovery mobile application, built for Android. (Images Soon&#8482;)
+                            Prototype music discovery mobile application. (Images Soon&#8482;)
                         </Subtitle>
                     </ProjectCard>
 
